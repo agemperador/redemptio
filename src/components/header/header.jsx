@@ -4,7 +4,7 @@ import { HeaderContainer,Logo,Nav } from './header.styles';
 
 const Header = () => {
     
-    const [headerState,setHeaderState] = useState(false)
+    const [headerState,setHeaderState] = useState(true)
     //const [scrollPosition, setSrollPosition] = useState(0);
 
 
