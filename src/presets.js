@@ -1,0 +1,1 @@
+export const HEADER_HEIGHTS = ['130px', '40px']

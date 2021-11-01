@@ -1,7 +1,23 @@
 .banner-container {
     width: 100%;
     height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    h2 {
+        color: white;
+        z-index: 1;
+        margin: auto;
+        font-size: 60px;
+        text-transform: uppercase;
+        font-weight: normal;
+    }
     img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
         height: 100%;
         width: 100%;
         object-fit: cover;

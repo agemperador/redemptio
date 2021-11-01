@@ -1,20 +1,43 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import './header.scss'
+import { HeaderContainer,Logo,Nav } from './header.styles';
 
 const Header = () => {
+    
+    const [headerState,setHeaderState] = useState(false)
+    const [scrollPosition, setSrollPosition] = useState(0);
+
+
+
+    const handleScroll = () => {
+        const position = window.pageYOffset;
+        if (position > 80) setHeaderState(false)
+        else setHeaderState(true)
+        setSrollPosition(position);
+    };
+    
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+
+
     return (
-        <header className='header-container'>
+        <HeaderContainer headerState={headerState} className='header-container'>
             
-            <nav>
+            <Nav headerState={headerState}>
                 <ul>
                     <li>Home</li>
                     <li>Metahipnosis</li>
-                    <div className="logo">ACSDS</div>
+                    <div className='logo'><Logo headerState={headerState} src="images/logo.jpeg" alt="" /></div>
                     <li>Nosotros</li>
                     <li>Contacto</li>
                 </ul>
-            </nav>
-        </header>
+            </Nav>
+        </HeaderContainer>
     )
 }
 
