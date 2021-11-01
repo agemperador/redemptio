@@ -5,7 +5,7 @@ import { HeaderContainer,Logo,Nav } from './header.styles';
 const Header = () => {
     
     const [headerState,setHeaderState] = useState(false)
-    const [scrollPosition, setSrollPosition] = useState(0);
+    //const [scrollPosition, setSrollPosition] = useState(0);
 
 
 
@@ -13,7 +13,7 @@ const Header = () => {
         const position = window.pageYOffset;
         if (position > 80) setHeaderState(false)
         else setHeaderState(true)
-        setSrollPosition(position);
+        //setSrollPosition(position);
     };
     
     useEffect(() => {
