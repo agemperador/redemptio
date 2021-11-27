@@ -44,9 +44,9 @@ const Footer = () => {
                 </div>
                 <div className="testimonios">
                     <h3>Testimonios</h3>
-                    <div className='slider-testimonios'>
+                    {/* <div className='slider-testimonios'>
                         <SliderFooter testimonios={testimonios}/>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div className="extra">

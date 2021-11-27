@@ -1,19 +1,21 @@
 import React,{useRef} from 'react';
 import { Rerousel } from 'rerousel';
+import BannerCard from '../banner-card/banner-card';
 
 import './slider-footer.scss'
 
 
 const SliderFooter = ({testimonios}) => {
 
+    
     const ref = useRef(null)
 
-    console.log(testimonios)
     return (
         <div className='slider-footer-container'>
-            <Rerousel itemRef={ref} className='rerousel'>
-                {testimonios.map(t => {
-                return <div className='img-container'><img key={t.key} alt={t.image} src={t.image}  ref={ref}/></div>
+            <Rerousel itemRef={ref} >
+                {testimonios.map(texto => {
+                    console.log(texto)
+                return<BannerCard className='banner-card-container' key={texto.key} text = {texto.text} ref={ref}/>
             })
         }
             </Rerousel>
