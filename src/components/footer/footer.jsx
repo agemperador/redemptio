@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import RedesSociales from '../redes-sociales/redes-sociales'
-import SliderFooter from '../slider-footer/slider-footer'
-
+/* import SliderFooter from '../slider-footer/slider-footer'
+ */
 import './footer.scss'
 
 const Footer = () => {

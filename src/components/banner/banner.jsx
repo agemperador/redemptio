@@ -1,7 +1,5 @@
 import React,{useEffect,useState} from 'react'
 import './banner.scss'
-import BannerCard from '../banner-card/banner-card'
-import SliderFooter from '../slider-footer/slider-footer'
 import Slider from '../slider-empe/slider'
 
 
