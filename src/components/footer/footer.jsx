@@ -28,7 +28,7 @@ const Footer = () => {
 
     const renderLinks=(links)=>{
         return links.map(link => {
-            return <li>{link.name}</li>
+            return <li key={link.key}>{link.name}</li>
         });
     }
     return (
