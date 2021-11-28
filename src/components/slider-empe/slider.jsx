@@ -22,7 +22,7 @@ const Slider = ({testimonios}) => {
     useInterval(() => {
         // Your custom logic here
         slideRight();
-    }, 5000);
+    }, 8000);
 
     
     return (

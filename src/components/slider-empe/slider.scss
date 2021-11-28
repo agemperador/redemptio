@@ -7,6 +7,9 @@
     justify-content: center;
     display: flex;
     z-index: 9;
+    @media (max-width: 600px) {
+        width: 80vw;
+    }
     .slide {
         opacity: 0%;
         transition: ease-in 0.3s;

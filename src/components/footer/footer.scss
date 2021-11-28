@@ -16,6 +16,11 @@
         padding: 10px 0;
         position: relative;
         margin-bottom: 10px;
+        @media (max-width: 600px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
         .links {
             grid-column: 1;
             grid-row: 1;
@@ -37,6 +42,9 @@
             .slider-testimonios {
                 height: 200px;
                 margin: 10px 40px 0px 0px;
+            }
+            @media (max-width: 600px) {
+                margin-top: 25px;
             }
         }
         ul {

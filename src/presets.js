@@ -1,1 +1,1 @@
-export const HEADER_HEIGHTS = ['130px', '40px']
+export const HEADER_HEIGHTS = ['130px', '40px', '120px', '50px']
